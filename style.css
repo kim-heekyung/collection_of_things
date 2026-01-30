@@ -11,6 +11,16 @@ body {
 
 .top {
   position: relative;
+
+}
+
+.top-inner {
+  max-width: 1100px;   /* hr.wave의 max-width랑 맞추면 더 예쁨 */
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center; /* 제목은 가운데 */
+  align-items: center;
 }
 
 .top h1 {
@@ -18,16 +28,16 @@ body {
   font-size: 50px;
   letter-spacing: 0.2em;
   transform: scaleY(0.92);
-  
+
   text-align: center;
   margin: 0 auto;
 }
 
 .cat-icon {
   position: absolute;
-  top: 80px;
-  right: 130px;
-
+  right: 5%;            /* top-inner의 오른쪽 끝 */
+  top: 160%;
+  transform: translateY(-50%); /* 수직 중앙 정렬 */
   display: inline-block;
 }
 
