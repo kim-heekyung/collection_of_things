@@ -1,0 +1,167 @@
+* {
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    background-color: #FFFAF0;
+}
+
+.top {
+  position: relative;
+}
+
+.top h1 {
+  font-family: 'Bitcount Single', sans-serif;
+  font-size: 50px;
+  letter-spacing: 0.2em;
+  transform: scaleY(0.92);
+  
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cat-icon {
+  position: absolute;
+  top: 80px;
+  right: 130px;
+
+  display: inline-block;
+}
+
+.cat-icon img {
+  width: 28px; 
+  height: auto;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -130%;           
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: black;
+  color: white;
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.cat-icon:hover .tooltip {
+  opacity: 1;
+}
+
+.top hr {
+    margin: 50px 0 50px;
+}
+
+hr.wave {
+  border: none;
+  height: 10px;
+
+  max-width: 1100px;
+  margin: 50px auto;
+
+  background-image: url("wave.svg");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: auto 100%; 
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*margin-bottom: 24px;*/
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 15px;
+    line-height: 1;
+    background-color: ;
+}
+
+.tag.type_1 {background-color: #db8a8a;}
+.tag.type_2 {background-color: #93aed2;}
+.tag.type_3 {background-color: #9fc69f;}
+.tag.type_4 {background-color: #9d95d0;}
+.tag.type_5 {background-color: #b3b3b3;}
+.tag.type_6 {background-color: #eda978;}
+.tag.type_7 {background-color: #ede278;}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    padding: 50px;
+    /*margin-left: 100px;*/
+    /*margin-right: 100px;*/
+    margin: 0 auto;
+    max-width: 1200px;
+    align-items: start;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    max-height: 430px;
+    justify-self: start;
+    border: 8px solid transparent;
+    border-radius: 15px;
+    transition:
+        transform 1.5s ease
+}
+
+.gallery img:hover {
+  transform: translateY(-5px);
+}
+
+.gallery img.type_1 { border-color: #db8a8a; }
+.gallery img.type_2 { border-color: #93aed2; }
+.gallery img.type_3 { border-color: #9fc69f; }
+.gallery img.type_4 { border-color: #9d95d0; }
+.gallery img.type_5 { border-color: #b3b3b3; }
+.gallery img.type_6 { border-color: #eda978; }
+.gallery img.type_7 { border-color: #ede278; }
+
+
+
+/* 로딩 문구 */
+.loading {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
+  padding: 20px 0;
+}
+
+/* 필터로 숨길 때 */
+.is-hidden {
+  display: none !important;
+}
+
+
+
+
+
+
+
